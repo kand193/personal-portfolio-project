@@ -34,6 +34,7 @@
         "alphabetize": {"order": "asc", "caseInsensitive": true}
       }
     ],
+    "linebreak-style": ["error", "windows"],
     "react/prop-types": ["error", { "ignore": ["children"] }],
     "import/extensions": [
       "error",

@@ -7,6 +7,9 @@ import Container from "components/Container";
 const GlobalStyle = createGlobalStyle`
 html,
 body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family:
@@ -21,6 +24,12 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
+  background-color: rgb(37, 45, 38);
+}
+
+#__next {
+  width: 100%;
+  height: 100%;
 }
 
 a {
