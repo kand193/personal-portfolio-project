@@ -3,14 +3,17 @@ import styled from "styled-components";
 
 import BLSection from "components/BLSection";
 import TRSection from "components/TRSection";
+import Xmark from "components/Xmark";
 
 const IndexPage: FC = () => (
   <Wrapper>
     <TRSection>
       <TRText>work</TRText>
+      <Xmark left="530px" top="240px" />
     </TRSection>
     <BLSection>
       <BLText>about me</BLText>
+      <Xmark left="-2px" top="-5px" />
     </BLSection>
     <Title>Web Frontend Developer</Title>
     <br />
