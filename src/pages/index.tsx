@@ -1,9 +1,20 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
+import BLSection from "components/BLSection";
+import TRSection from "components/TRSection";
+
 const IndexPage: FC = () => (
   <Wrapper>
-    <TRSection></TRSection>
+    <TRSection>
+      <TRText>work</TRText>
+    </TRSection>
+    <BLSection>
+      <BLText>about me</BLText>
+    </BLSection>
+    <Title>Web Frontend Developer</Title>
+    <br />
+    <Name>Youngjin Park</Name>
   </Wrapper>
 );
 
@@ -13,47 +24,35 @@ const Wrapper = styled.div`
   position: relative;
   top: 50%;
   left: 50%;
+  width: 800px;
+  height: 300px;
   transform: translate(-50%, -50%);
 `;
 
-const TRSection = styled.div`
-  position: relative;
-  width: 820px;
-  height: 500px;
-  margin: 0 auto;
-  background-color: transparent;
-  border-top: 2px solid rgb(88, 83, 63);
-  border-right: 2px solid rgb(88, 83, 63);
+const Title = styled.div`
+  z-index: 10;
+  color: white;
+  font-size: 28px;
+`;
 
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    background-image: url("https://blog.krafton.com/wp-content/uploads/2020/04/GameOn_healing_01.png");
-    border: 2px solid transparent;
-    content: "";
-  }
+const Name = styled.div`
+  z-index: 10;
+  color: white;
+  font-size: 90px;
+`;
 
-  &:hover::before {
-    width: 100%;
-    height: 100%;
-    border-top-color: white;
-    border-right-color: white;
-    transition: width 0.5s ease-out, height 0.5s ease-out 0.5s;
-  }
+const TRText = styled.div`
+  position: absolute;
+  right: -40px;
+  bottom: 30px;
+  color: rgb(88, 83, 63);
+  transform: rotateZ(90deg);
+`;
 
-  &::after {
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    z-index: 3;
-    width: 0;
-    height: 0;
-    border-right: 823px solid transparent;
-    border-bottom: 503px solid rgb(37, 45, 38);
-    content: "";
-  }
+const BLText = styled.div`
+  position: absolute;
+  top: 40px;
+  left: -50px;
+  color: rgb(88, 83, 63);
+  transform: rotateZ(270deg);
 `;
