@@ -24,7 +24,6 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
-  background-color: rgb(37, 45, 38);
 }
 
 #__next {

@@ -1,24 +1,31 @@
+import Link from "next/link";
 import React, { FC } from "react";
 import styled from "styled-components";
 
+import Background from "components/Background";
 import BLSection from "components/BLSection";
 import TRSection from "components/TRSection";
 import Xmark from "components/Xmark";
 
 const IndexPage: FC = () => (
-  <Wrapper>
-    <TRSection>
-      <TRText>work</TRText>
-      <Xmark left="530px" top="240px" />
-    </TRSection>
-    <BLSection>
-      <BLText>about me</BLText>
-      <Xmark left="-2px" top="-5px" />
-    </BLSection>
-    <Title>Web Frontend Developer</Title>
-    <br />
-    <Name>Youngjin Park</Name>
-  </Wrapper>
+  <>
+    <Background color="rgb(37, 45, 38)" />
+    <Wrapper>
+      <TRSection>
+        <TRText>work</TRText>
+        <Xmark left="530px" top="240px" />
+      </TRSection>
+      <Link href="/about">
+        <BLSection>
+          <BLText>about me</BLText>
+          <Xmark left="-2px" top="-5px" />
+        </BLSection>
+      </Link>
+      <Title>Web Frontend Developer</Title>
+      <br />
+      <Name>Youngjin Park</Name>
+    </Wrapper>
+  </>
 );
 
 export default IndexPage;
