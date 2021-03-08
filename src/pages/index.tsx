@@ -3,9 +3,9 @@ import React, { FC } from "react";
 import styled from "styled-components";
 
 import Background from "components/Background";
-import BLSection from "components/BLSection";
-import TRSection from "components/TRSection";
-import Xmark from "components/Xmark";
+import BLSection from "components/Index/BLSection";
+import TRSection from "components/Index/TRSection";
+import Xmark from "components/Index/Xmark";
 
 const IndexPage: FC = () => (
   <>

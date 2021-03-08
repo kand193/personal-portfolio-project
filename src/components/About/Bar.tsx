@@ -21,7 +21,7 @@ export default Bar;
 
 const Wrapper = styled.div<{ length?: number }>`
   position: relative;
-  width: ${(props) => (props.length ? `${60 * props.length}px` : "0px")};
+  width: ${(props) => (props.length ? `${80 * props.length}px` : "0px")};
   height: 15px;
   background-color: #707070;
   border: 1px solid #5b5b5b;
@@ -35,6 +35,7 @@ const Wrapper = styled.div<{ length?: number }>`
     width: 100%;
     height: 100%;
     background-color: white;
+    border: 1px solid #5b5b5b;
     border-radius: 8px;
     content: "";
   }
