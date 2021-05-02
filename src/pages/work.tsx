@@ -6,7 +6,7 @@ import Background from "components/Background";
 const TITLE_HEIGHT = 440;
 
 const Work: FC = () => {
-  const [isFixedImage, setIsFixedImage] = useState(false);
+  const [isFixedImage, setIsFixedImage] = useState(true);
 
   useEffect(() => {
     const onScroll = () => {
@@ -82,9 +82,9 @@ const Thumbnail = styled.div<{ isFixed?: boolean }>`
     left: 50%;
     transform: translateX(-50%);
   `}
+  z-index: 100;
   width: 100%;
   height: auto;
-  z-index: 100;
 
   > img {
     width: 100%;
