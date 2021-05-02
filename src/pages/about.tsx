@@ -5,19 +5,20 @@ import BarLine from "components/About/BarLine";
 import Level from "components/About/Level";
 import Section, { SectionTitle } from "components/About/Section";
 import Background from "components/Background";
+import LeftMenu from "components/LeftMenu";
 
 const About: FC = () => (
   <>
     <Background color="rgb(239,238,238)" />
+    <LeftMenu />
     <Wrapper>
       <Job>Web Frontend Developer</Job>
       <Name>Youngjin Park</Name>
       <Description>
-        Hello, I am a web frontend developer working in Mesh Korea. I want to be
-        a developer learning about new technology and adapting fastly.
-        <br /> My strength is experienced in various fields like Game Client,
-        Web Frontend, Windows Application, Android Application. So I think to
-        have a good adaptation.
+        Hello, I am a web frontend developer working in Mesh Korea. I want to be a developer
+        learning about new technology and adapting fastly.
+        <br /> My strength is experienced in various fields like Game Client, Web Frontend, Windows
+        Application, Android Application. So I think to have a good adaptation.
         <br />
         Thank you.
       </Description>
@@ -26,9 +27,7 @@ const About: FC = () => (
         <div>
           <WorkExpItem>
             <WorkExpPeriod>2015.09 ~ 2017.06</WorkExpPeriod>
-            <WorkExpContent>
-              Software Developer, Republic of Korea Cyber Command
-            </WorkExpContent>
+            <WorkExpContent>Software Developer, Republic of Korea Cyber Command</WorkExpContent>
           </WorkExpItem>
           <WorkExpItem>
             <WorkExpPeriod>2017.07 ~ 2020.12</WorkExpPeriod>
@@ -59,10 +58,7 @@ const About: FC = () => (
       <Section mt="60px">
         <SectionTitle title="Contact" textAlign="left" />
         <LinkText>
-          <a
-            href="https://www.linkedin.com/in/youngjin-park-a9800b161"
-            target="blank"
-          >
+          <a href="https://www.linkedin.com/in/youngjin-park-a9800b161" target="blank">
             linkedin
           </a>
         </LinkText>
@@ -79,6 +75,7 @@ const About: FC = () => (
 export default About;
 
 const Wrapper = styled.div`
+  width: 90%;
   margin: 0 auto;
   padding: 30px 0;
 `;
